@@ -20,6 +20,11 @@ Starter Code:
 */
 
 function fromListToObject(array) {
-  // your code here
+  returnObj = {};
 
+  array.forEach(function (pair) {
+    returnObj[pair[0]] = pair[1];
+  }) 
+
+  return returnObj;
 }

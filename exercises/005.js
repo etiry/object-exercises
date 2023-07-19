@@ -25,6 +25,15 @@ Starter Code :
 */
 
 function transformEmployeeData(array) {
-  // your code here
+  returnArray = [];
 
+  array.forEach(function (person) {
+    obj = {};
+    person.forEach(function (pair) {
+      obj[pair[0]] = pair[1];
+    })
+    returnArray.push(obj);
+  })
+
+  return returnArray;
 }
